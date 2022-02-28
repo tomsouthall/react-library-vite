@@ -1,7 +1,7 @@
 {
   "name": "react-library-vite",
   "version": "0.0.0",
-  "description": "A scaffold for building a React library using Vite, ready to be published to npm",
+  "description": "A scaffold app for building a React component/library using Vite, ready for publication to npm",
   "author": "Tom Southall",
   "keywords": [],
   "files": [
