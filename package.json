@@ -1,0 +1,69 @@
+{
+  "name": "react-library-vite",
+  "version": "0.0.0",
+  "description": "A scaffold for building a React library using Vite, ready to be published to npm",
+  "author": "Tom Southall",
+  "keywords": [],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/react-library-vite.umd.js",
+  "module": "./dist/react-library-vite.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-library-vite.es.js",
+      "require": "./dist/react-library-vite.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "watch": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/react": "^12.1.3",
+    "@vitejs/plugin-react": "^1.0.7",
+    "c8": "^7.11.0",
+    "eslint": "^8.9.0",
+    "eslint-plugin-react": "^7.28.0",
+    "jsdom": "^19.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "vite": "^2.8.0",
+    "vitest": "^0.3.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2020": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  }
+}
